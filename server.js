@@ -12,7 +12,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
     secret: 'Do not tell anyone',
     cookie: {
-        maxAge: 86400,
+        maxAge: 120000,
     },
     resave: false,
     saveUninitialized: true,
