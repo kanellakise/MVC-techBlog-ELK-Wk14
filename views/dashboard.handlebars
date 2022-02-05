@@ -16,12 +16,12 @@
 
 {{#if posts.length}}
 <section class="mx-5">
-    <h2 class="title is-4">Your Posts</h2>
+    <h2 class="title is-4 mx-5">Your Posts</h2>
     <ul>
         {{#each posts as |post|}}
-        <li class="box mx-3">
+        <li class="mx-3 my-5">
             {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-link is-light">Edit post</a>
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-link is-light mx-5">Edit post</a>
         </li>
         {{/each}}
     </ul>
